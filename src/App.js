@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 const cardImages=[
@@ -23,7 +23,11 @@ function App() {
     setCards(shuffledcard)
     setTurns(0)
   }
-  console.log(cards,turns)
+  
+  useEffect(()=>{
+    console.log("Mounted");
+  },[]);
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
