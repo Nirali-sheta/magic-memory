@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Magic Match</h1>
+      <h1>Nirali's Magic Match</h1>
       <button onClick={shufflecard}>New Game</button>
     </div>
   );
